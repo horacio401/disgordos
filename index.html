@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DISGORDOS</title>
+  <link rel="stylesheet" href="perinetti.css" />
+  <script src="https://use.fontawesome.com/8661361d5f.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>DISGORDOS</header>
+    <form>
+      <div class="inputs">
+        <input type="text" required>
+        <label>Email o Usuario</label>
+      </div>
+      <div class="inputs">
+        <input class="pswrd" type="password" required>
+        <span class="show">Mostrar</span>
+        <label>Contraseña</label>
+      </div>
+      <div class="button">
+        <div class="inner"></div>
+        <button>Ingresar</button>
+      </div>
+    </form>
+    <div class="auth">O ingresa con</div>
+    <div class="links">
+      <div class="facebook">
+        <i class="fab fa-facebook-square"><span>Facebook</span></i>
+      </div>
+      <div class="google">
+        <i class="fab fa-google-plus-square"><span>Google</span></i>
+      </div>
+    </div>
+    <div class="signup">No eres gordo? <a href="#">Registrate</a></div>
+  </div>
+  <script>
+    var input = document.querySelector('.pswrd');
+    var show = document.querySelector('.show');
+    show.addEventListener('click', toggleInputType);
+    function toggleInputType() {
+      if (input.type === "password") {
+        input.type = "text";
+        show.innerHTML = "Ocultar"
+      }
+      else {
+        input.type = "password"
+        show.innerHTML = "Mostrar"
+      }
+    }
+  </script>
+</body>
+
+</html>

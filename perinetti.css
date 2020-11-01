@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: serif;
+  font-family: "Roboto";
   background-color: black;
   height: 100vh;
   margin-left: 65%;
@@ -33,8 +33,6 @@ i{
 header {
   font-size: 40px;
   margin-bottom: 60px;
-  font-family: serif;
-  color: blue;
 }
 
 .inputs,

@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DISGORDOS</title>
   <script src="https://use.fontawesome.com/8661361d5f.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel ="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="perinetti.css" />
 
 </head>
 
 <body>
   <div class="container">
-    <header>DISGORDOS</header>
+    <header>Disgordos</header>
     <form>
       <div class="inputs">
         <input type="text" required>
@@ -21,12 +22,12 @@
       </div>
       <div class="inputs">
         <input class="pswrd" type="password" required>
-        <span class="show">Mostrar</span>
+        <span class="show">MOSTRAR</span>
         <label>Contraseña</label>
       </div>
       <div class="button">
         <div class="inner"></div>
-        <button>Ingresar</button>
+        <button class="boton">Ingresar</button>
       </div>
     </form>
     <div class="auth">O ingresa con</div>
@@ -38,7 +39,7 @@
         <i class="fab fa-google-plus-square"><span>Google</span></i>
       </div>
     </div>
-    <div class="signup">No eres gordo? <a href="#">Registrate</a></div>
+    <div class="signup">No eres gordo? <a href="https://preview.redd.it/zger2ew82et31.jpg?auto=webp&s=f88ada8645022309639d0a3ffba075bb679b9180">Registrate</a></div>
   </div>
   <script>
     var input = document.querySelector('.pswrd');
@@ -47,11 +48,13 @@
     function toggleInputType() {
       if (input.type === "password") {
         input.type = "text";
-        show.innerHTML = "Ocultar"
+        show.style.color = "#1DA1F2" ;
+        show.textContent = "OCULTAR" ;
       }
       else {
         input.type = "password"
-        show.innerHTML = "Mostrar"
+        show.innerHTML = "MOSTRAR"
+        show.style.color = "#111" ;
       }
     }
   </script>

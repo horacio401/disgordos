@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Roboto";
+  font-family: 'Architects Daughter'; 
   background-color: black;
   height: 100vh;
   margin-left: 65%;
@@ -18,28 +18,26 @@ body {
   background-size: cover;
 }
 
-i{
-  font-family: 'FontAwesome';
-}
-
 .container {
   position: relative;
-  width: 400px;
-  height: 600px;
+  width: 300px;
+  height: 500px;
   background: white;
-  padding: 60px 40px;
+  padding: 30px 40px;
 }
 
 header {
+  font-family: 'Architects Daughter';
   font-size: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .inputs,
 form .button {
-  margin: 25px 0;
+  margin: 17px 0;
   position: relative;
-  height: 50px;
+  height: 40px;
   width: 100%;
 }
 
@@ -49,38 +47,38 @@ form .button {
   border: 1px solid silver;
   padding-left: 15px;
   outline: none;
-  font-size: 19px;
+  font-size: 18px;
   transition: .4s;
+  font-family: 'Architects Daughter';
 }
 
-input:focus {
-  border: 3px solid black;
+input:focus { 
+  border: 2px solid black;
 }
 
 .inputs label,
 span.show {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 40%;
+  transform: translateY(-30%);
 }
 
 .inputs label {
   left: 15px;
   pointer-events: none;
   color: grey;
-  font-size: 18px;
+  font-size: 14px;
   transition: .4s;
 }
 
 span.show {
-  right: 20px;
-  color: #111;
+  right: 10px;
+  color:red;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   user-select: none;
   visibility: hidden;
-  font-family: serif;
 }
 
 input:valid ~ span.show {
@@ -91,12 +89,12 @@ input:focus ~ label,
 input:valid ~ label {
   transform: translateY(-33px);
   background: white;
-  font-size: 16px;
+  font-size: 20px;
   color: black;
 }
 
 form .button {
-  margin-top: 30px;
+  margin-top: 20px;
   overflow: hidden;
   z-index: 111;
 }
@@ -124,13 +122,14 @@ form .button {
   color: black;
   font-size: 20px;
   cursor: pointer;
-  font-family: serif;
 }
 
 .container .auth {
-  margin: 35px 0 20px 0;
+  margin: 20px 0 10px 0;
   font-size: 19px;
   color: grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .links {
@@ -140,19 +139,22 @@ form .button {
 
 .facebook,
 .google {
-  height: 40px;
+  height: 20px;
   width: 100%;
-  border: 1px solid silver;
-  margin: 0 10px;
+  border: none;
   transition: .4s;
 }
 
-.facebook:hover {
-  border: 1px solid #4267B2;
+.facebook {
+  padding-left: 10px;
 }
 
-.google:hover {
-  border: 1px solid #dd4b39;
+.google {
+padding-left: 50px;
+}
+
+i{
+  font-family: 'FontAwesome';
 }
 
 .facebook i,
@@ -176,12 +178,10 @@ form .button {
   font-size: 17px;
   font-weight: bold;
   padding-left: 8px;
-  font-family: serif;
 }
 
 .signup {
   margin-top: 50px;
-  font-family: serif;
 }
 
 .signup a {
@@ -191,4 +191,8 @@ form .button {
 
 .signup a:hover {
   text-decoration: underline;
+}
+
+.boton {
+font-family: 'Architects Daughter';
 }
